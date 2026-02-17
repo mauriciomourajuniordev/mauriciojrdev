@@ -112,6 +112,10 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+main > aside > ul {
+    list-style-type: '\2415';
+}
+
 
 
 
