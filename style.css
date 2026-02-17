@@ -22,13 +22,7 @@
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: 'revalia', sans-serif ;
 }
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-  }
-}
+
 header {
     background-image: linear-gradient(to bottom,#989b9c, #5d5d5d);
     min-height: 70px;
@@ -107,6 +101,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
