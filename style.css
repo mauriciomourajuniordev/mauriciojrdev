@@ -103,6 +103,7 @@ main > article > h4 {
 }
 main > article > p {
 text-align: justify;
+margin: 10px 0px;
 }
 footer {
 
@@ -110,6 +111,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
