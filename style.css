@@ -95,6 +95,9 @@ main > aside > h2 {
     font-family: var(--fonte-destaque);
     color: var(--cor4);
 } 
+main > aside > h4 {
+    margin: 10px 0px;
+}
 main > picture > img {
     width: 100%;
 }
@@ -112,6 +115,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
