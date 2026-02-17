@@ -99,6 +99,7 @@ main > picture > img {
 }
 main > article > h4 {
     text-align: center;
+    margin: 10px 0px;
 }
 main > article > p {
 text-align: justify;
@@ -109,6 +110,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
