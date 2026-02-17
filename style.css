@@ -41,6 +41,7 @@ header {
 header > h1 {
     font-size: 1.4em;
     text-align: center;
+    margin: 10px 0px;
 }
 nav {
     position: relative;
@@ -109,6 +110,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
