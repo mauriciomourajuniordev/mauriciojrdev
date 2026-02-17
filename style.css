@@ -22,6 +22,14 @@
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: 'revalia', sans-serif ;
 }
+main > p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 2em;
+    
+}
 
 header {
     background-image: linear-gradient(to bottom,#989b9c, #5d5d5d);
@@ -101,6 +109,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
