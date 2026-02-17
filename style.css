@@ -93,6 +93,7 @@ main > aside > h2 {
 } 
 main > aside > h4 {
     margin: 10px 0px;
+    padding: 10px 0px;
 }
 main > picture > img {
     width: 100%;
@@ -111,6 +112,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
