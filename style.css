@@ -77,7 +77,7 @@ main {
 header > h1 {
     font-family: var(--fonte-destaque);
     color: var(--cor4);
-        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.568)
+        text-shadow: 1px 0px 7px rgb(0 0 0 / 52%)
 }
 main > h2 {
     font-family: var(--fonte-destaque);
@@ -112,6 +112,7 @@ color: rgb(0, 0, 0);
 text-align: center;
 
 }
+
 
 
 
