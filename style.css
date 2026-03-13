@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*
 #848484 cinza padrão
@@ -8,10 +8,11 @@
 #5256AB azulado
 #887CFF meio roxo
 */
-* {
-    margin: 0px;
 
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -20,119 +21,132 @@
     --cor2: #95999A;
     --cor3: #5256AB;
     --cor4: #887CFF;
-    --fonte-padrao: arial, verdana, helvetica, sans-serif;
-    --fonte-destaque: 'revalia', sans-serif ;
+    --fonte-padrao: "Roboto", arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'revalia', sans-serif;
 }
-main > p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 25px;
-    font-size: 1em;
-    line-height: 2em;
-    
+
+body {
+    font-family: var(--fonte-padrao);
 }
 
 header {
-    background-image: linear-gradient(to bottom,#989b9c, #5d5d5d);
-    min-height: 70px;
-    padding-top: 30px;
-    width: auto;
-
+    background-image: linear-gradient(to bottom, #989b9c, #5d5d5d);
+    min-height: 4.375rem;
 }
-header > h1 {
+
+header h1 {
     font-size: 1.3em;
     text-align: center;
-    margin: 8px 0px;
+    padding: 1.25rem 0 1.25rem;
 }
-nav {
-    position: relative;
+
+header nav ul {
     background-color: #5d5d5d;
-    padding: 15px;
-    box-shadow: 9px 6px 5px #887cff54
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.9375rem;
+    box-shadow: 9px 6px 5px #887cff54;
+    list-style: none;
 }
-nav > a {
-    color: black;
-    padding: 10px;
+
+nav ul li a {
+    color: white;
+    padding: 0.625rem;
     text-decoration: none;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
-nav > a:hover {
-    background-color:#989b9c;
-    color: var(--cor4);
+
+nav ul li a:hover {
+    background-color: #989b9c;
+    color: var(--cor3);
     border-radius: 5px;
 }
+
 main {
-    background-color:rgba(240, 248, 255, 0.926);
-    min-width: 265px;
-    max-width: 1440px;
-    padding-top: 5px;
-    padding: 25px;
+    background-color: rgba(240, 248, 255, 0.926);
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    max-width: 56.25rem;
     margin: auto;
-    box-shadow: 0px 0px 10px #5257abab;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-bottom: 15px;
+    padding: 2rem 2rem 1rem;
+    box-shadow: 0 0 10px #5257abab;
 }
 
-header > h1 {
+header h1,
+.secao-sobre h2,
+.secao-experiencia h2,
+.secao-formacao h2,
+.secao-diferenciais h2 {
     font-family: var(--fonte-destaque);
     color: var(--cor4);
-        text-shadow: 1px 0px 7px rgb(0 0 0 / 52%)
+    margin-bottom: 1rem;
 }
-main > h2 {
-    font-family: var(--fonte-destaque);
-    color: var(--cor4);
+
+header h1 {
+    text-shadow: 0.0625rem 0 0.4375rem rgb(0 0 0 / 52%)
 }
-main > article > h2 {
-    font-family: var(--fonte-destaque);
-    color: var(--cor4);
+
+.secao-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
 }
-main > aside > h2 {
-    font-family: var(--fonte-destaque);
-    color: var(--cor4);
-} 
-main > aside > h4 {
-    margin: 10px 0px;
-    padding: 10px 0px;
-}
-main > picture > img {
-    width: 100%;
-}
-main > article > h4 {
+
+.secao-sobre h2 {
     text-align: center;
-    margin: 10px 0px;
 }
-main > article > p {
-text-align: justify;
-margin: 10px 0px;
-}
-footer {
 
-color: rgb(0, 0, 0);
-text-align: center;
-
+.secao-experiencia article {
+    display: flex;
+    flex-direction: column;
 }
-main > aside > ul {
+
+section article h3 {
+    margin-bottom: 1rem;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 1.5625rem;
+    line-height: 1.5em;
+    max-width: 100ch;
+}
+
+main ul {
+    margin-left: 1rem;
+    padding: 0.625rem 0;
+    line-height: 1.5em;
+}
+
+main picture img {
+    width: 100%;
+    max-width: 37.5rem;
+    height: auto;
+    border-radius: 10px;
+}
+
+.secao-formacao ul {
     list-style-type: '\2714';
 }
 
+footer {
+    padding: 0.9375rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
 
 
+@media (max-width: 620px) {
+    main {
+        padding: 1rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5625rem;
+    }
+}
